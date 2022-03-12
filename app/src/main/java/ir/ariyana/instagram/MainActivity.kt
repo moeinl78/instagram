@@ -3,7 +3,9 @@ package ir.ariyana.instagram
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
+import androidx.fragment.app.Fragment
 import ir.ariyana.instagram.databinding.ActivityMainBinding
+import ir.ariyana.instagram.fragment.FragmentHome
 
 class MainActivity : AppCompatActivity() {
 
@@ -38,5 +40,18 @@ class MainActivity : AppCompatActivity() {
             }
             true
         }
+
+        onRun()
+    }
+
+    private fun startTransAction(fragment : Fragment) {
+        val transaction = supportFragmentManager.beginTransaction()
+        transaction.replace(R.id.mainActivityFrameLayout, fragment)
+        transaction.commit()
+    }
+
+    private fun onRun() {
+        startTransAction(FragmentHome())
+        binding.mainActivityBNV.selectedItemId = R.id.mainBNVHome
     }
 }
