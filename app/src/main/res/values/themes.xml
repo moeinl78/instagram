@@ -9,7 +9,7 @@
         <!-- Secondary brand color. -->
         <item name="colorSecondary">@color/blue_button</item>
         <item name="colorSecondaryVariant">@color/black_text</item>
-        <item name="colorOnSecondary">@color/white</item>
+        <item name="colorOnSecondary">@color/black_text</item>
 
         <!-- Status bar color. -->
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
@@ -22,5 +22,6 @@
     <style name="ToolbarInstagram" parent="Theme.MaterialComponents">
         <item name="fontFamily">@font/vibes_regular</item>
         <item name="android:fontFamily">@font/vibes_regular</item>
+        <item name="android:textColor"> @color/black_text </item>
     </style>
 </resources>

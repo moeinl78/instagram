@@ -5,35 +5,35 @@
     >
 
         <item
-            android:id="@+id/bottomNavigationExplore"
+            android:id="@+id/mainBNVHome"
             android:title=""
             android:icon="@drawable/ic_home"
             app:iconTint="@color/black_text"
             />
 
         <item
-            android:id="@+id/bottomNavigationTrend"
+            android:id="@+id/mainBNVExplore"
             android:title=""
             android:icon="@drawable/ic_baseline_search_24"
             app:iconTint="@color/black_text"
             />
 
         <item
-            android:id="@+id/bottomNavigationSaved"
+            android:id="@+id/mainBNVNew"
             android:title=""
             android:icon="@drawable/ic_outline_add_box_24"
             app:iconTint="@color/black_text"
             />
 
         <item
-            android:id="@+id/bottomNavigationSearch"
+            android:id="@+id/mainBNVActivity"
             android:title=""
             android:icon="@drawable/ic_baseline_favorite_24"
             app:iconTint="@color/black_text"
             />
 
         <item
-            android:id="@+id/bottomNavigationProfile"
+            android:id="@+id/mainBNVProfile"
             android:title=""
             android:icon="@drawable/ic_baseline_person_24"
             app:iconTint="@color/black_text"
