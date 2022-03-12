@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+        <item
+            android:id="@+id/bottomNavigationExplore"
+            android:title=""
+            android:icon="@drawable/ic_home"
+            app:iconTint="@color/black_text"
+            />
+
+        <item
+            android:id="@+id/bottomNavigationTrend"
+            android:title=""
+            android:icon="@drawable/ic_baseline_search_24"
+            app:iconTint="@color/black_text"
+            />
+
+        <item
+            android:id="@+id/bottomNavigationSaved"
+            android:title=""
+            android:icon="@drawable/ic_outline_add_box_24"
+            app:iconTint="@color/black_text"
+            />
+
+        <item
+            android:id="@+id/bottomNavigationSearch"
+            android:title=""
+            android:icon="@drawable/ic_baseline_favorite_24"
+            app:iconTint="@color/black_text"
+            />
+
+        <item
+            android:id="@+id/bottomNavigationProfile"
+            android:title=""
+            android:icon="@drawable/ic_baseline_person_24"
+            app:iconTint="@color/black_text"
+            />
+</menu>
