@@ -28,7 +28,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/dota_2"
-            android:textSize="18sp"
+            android:textSize="15sp"
             android:textColor="@color/black_text"
             android:textStyle="bold"
             android:layout_marginStart="64dp"
@@ -37,8 +37,8 @@
 
         <ImageView
             android:id="@+id/homeItemDropDown"
-            android:layout_width="24dp"
-            android:layout_height="24dp"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
             android:layout_marginEnd="16dp"
             android:src="@drawable/ic_menu"
             android:layout_gravity="end|center_vertical"
@@ -52,7 +52,7 @@
     <ImageView
         android:id="@+id/homeItemBGImage"
         android:layout_width="match_parent"
-        android:layout_height="320dp"
+        android:layout_height="256dp"
         android:src="@drawable/img_background_dota"
         android:scaleType="fitXY"
         />
@@ -76,15 +76,14 @@
 
         <ImageView
             android:layout_width="24dp"
-            android:layout_height="24dp"
+            android:layout_height="20dp"
             android:layout_gravity="start|center_vertical"
-            android:src="@drawable/ic_chat_message"
-            android:scaleX="-1"
             android:layout_marginStart="56dp"
             android:clickable="true"
             android:focusable="true"
-            app:tint="@color/black"
-            />
+            android:scaleX="-1"
+            android:src="@drawable/ic_chat_message"
+            app:tint="@color/black" />
 
         <ImageView
             android:layout_width="24dp"
@@ -116,7 +115,7 @@
         android:layout_height="wrap_content"
         android:text="87,650 views"
         android:textColor="@color/black"
-        android:textSize="16sp"
+        android:textSize="14sp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
         />
@@ -127,7 +126,7 @@
         android:layout_height="wrap_content"
         android:text="@string/dota_2"
         android:textColor="@color/black"
-        android:textSize="16sp"
+        android:textSize="14sp"
         android:textStyle="bold"
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
@@ -139,7 +138,7 @@
         android:layout_height="wrap_content"
         android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
         android:textColor="@color/black"
-        android:textSize="16sp"
+        android:textSize="14sp"
         android:textStyle="normal"
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
@@ -154,7 +153,7 @@
         android:layout_height="wrap_content"
         android:text="View all 205 comments"
         android:textColor="@color/gray_text"
-        android:textSize="14sp"
+        android:textSize="13sp"
         android:textStyle="normal"
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"

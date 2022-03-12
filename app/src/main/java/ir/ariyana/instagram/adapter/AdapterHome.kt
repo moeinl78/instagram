@@ -18,7 +18,7 @@ class AdapterHome(private val data : ArrayList<HomeItem>) : RecyclerView.Adapter
             binding.homeItemChannelName.text = data[position].channelName
             binding.homeItemChannelSecondName.text = data[position].channelName
             binding.homeItemContent.text = data[position].postContent
-            binding.homeItemViewsCount.text = data[position].postViewsCount + "views"
+            binding.homeItemViewsCount.text = data[position].postViewsCount + " views"
             binding.homeItemComment.text = "View all ${data[position].postComments} comments"
             Glide
                 .with(binding.root.context)
