@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -44,8 +45,11 @@ class FragmentHome : Fragment() {
             Story("https://www.augsburger-allgemeine.de/img/bilder/crop61777711/0039424940-cv16_9-w940-owebp/Elon-Musk?t=.jpg", "Elon Musk"),
             Story("https://upload.wikimedia.org/wikipedia/commons/4/4e/Darren_Hardy.jpg", "Darren Hardy"),
         )
-        val storyAdapter = AdapterStory(storyData)
-        binding.fragmentHomeStoryRecyclerView.adapter = storyAdapter
-        binding.fragmentHomeStoryRecyclerView.layoutManager = LinearLayoutManager(parentFragment?.context, RecyclerView.HORIZONTAL, false)
+//        val storyAdapter = AdapterStory(storyData)
+//        binding.fragmentHomeStoryRecyclerView.adapter = storyAdapter
+//        binding.fragmentHomeStoryRecyclerView.layoutManager = LinearLayoutManager(parentFragment?.context, RecyclerView.HORIZONTAL, false)
+        binding.fragmentHomeSendMessage.setOnClickListener {
+            Toast.makeText(parentFragment?.context, "Direct", Toast.LENGTH_SHORT).show()
+        }
     }
 }

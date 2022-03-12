@@ -3,6 +3,7 @@ package ir.ariyana.instagram.adapter
 import android.annotation.SuppressLint
 import android.view.LayoutInflater
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import ir.ariyana.instagram.data.HomeItem
@@ -29,6 +30,18 @@ class AdapterHome(private val data : ArrayList<HomeItem>) : RecyclerView.Adapter
                 .with(binding.root.context)
                 .load(data[position].postImage)
                 .into(binding.homeItemBGImage)
+            
+            binding.homeItemChannelName.setOnClickListener {
+                Toast.makeText(binding.root.context, "Channel", Toast.LENGTH_SHORT).show()
+            }
+            
+            binding.homeItemComment.setOnClickListener {
+                Toast.makeText(binding.root.context, "Comment", Toast.LENGTH_SHORT).show()
+            }
+
+            binding.homeItemDropDown.setOnClickListener {
+                Toast.makeText(binding.root.context, "DropDown", Toast.LENGTH_SHORT).show()
+            }
         }
     }
 
