@@ -5,7 +5,7 @@ import android.os.Bundle
 import android.widget.Toast
 import androidx.fragment.app.Fragment
 import ir.ariyana.instagram.databinding.ActivityMainBinding
-import ir.ariyana.instagram.fragment.FragmentHome
+import ir.ariyana.instagram.fragment.*
 
 class MainActivity : AppCompatActivity() {
 
@@ -19,23 +19,23 @@ class MainActivity : AppCompatActivity() {
             when (it.itemId) {
 
                 R.id.mainBNVHome -> {
-                    Toast.makeText(this, "Home", Toast.LENGTH_SHORT).show()
+                    startTransAction(FragmentHome())
                 }
 
                 R.id.mainBNVExplore -> {
-                    Toast.makeText(this, "Explore", Toast.LENGTH_SHORT).show()
+                    startTransAction(FragmentExplore())
                 }
 
                 R.id.mainBNVNew -> {
-                    Toast.makeText(this, "New", Toast.LENGTH_SHORT).show()
+                   startTransAction(FragmentNew())
                 }
 
                 R.id.mainBNVActivity -> {
-                    Toast.makeText(this, "Activity", Toast.LENGTH_SHORT).show()
+                    startTransAction(FragmentActivity())
                 }
 
                 R.id.mainBNVProfile -> {
-                    Toast.makeText(this, "Profile", Toast.LENGTH_SHORT).show()
+                    startTransAction(FragmentProfile())
                 }
             }
             true
