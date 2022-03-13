@@ -306,7 +306,6 @@
                     app:fabCustomSize="96dp"
                     app:elevation="0dp"
                     app:borderWidth="1dp"
-                    app:borderColor="@color/black"
                     app:backgroundTint="@color/black"
                     app:maxImageSize="48dp"
                     app:rippleColor="@color/gray_text"
@@ -330,6 +329,25 @@
                     />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <!-- continue from here -->
+
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/fragmentProfileTablayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                app:tabIndicatorHeight="3dp"
+                app:tabIndicatorColor="@color/blue_text"
+                app:tabIconTint="@color/black"
+                app:tabMode="auto"
+                />
+
+            <androidx.viewpager2.widget.ViewPager2
+                android:id="@+id/fragmentProfileViewpager"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
 
         </LinearLayout>
 

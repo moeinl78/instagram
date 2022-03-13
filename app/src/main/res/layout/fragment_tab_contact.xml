@@ -17,7 +17,6 @@
         app:fabCustomSize="128dp"
         app:elevation="0dp"
         app:borderWidth="1dp"
-        app:borderColor="@color/black"
         app:backgroundTint="@color/black"
         app:maxImageSize="64dp"
         app:rippleColor="@color/gray_text"

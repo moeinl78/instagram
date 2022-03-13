@@ -1,5 +1,6 @@
 package ir.ariyana.instagram.fragment
 
+import android.annotation.SuppressLint
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -7,9 +8,12 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.google.android.material.tabs.TabLayout
+import com.google.android.material.tabs.TabLayoutMediator
+import ir.ariyana.instagram.R
 import ir.ariyana.instagram.adapter.AdapterDiscover
+import ir.ariyana.instagram.adapter.AdapterProfileViewPager
 import ir.ariyana.instagram.data.Discover
-import ir.ariyana.instagram.data.Story
 import ir.ariyana.instagram.databinding.FragmentProfileBinding
 
 class FragmentProfile : Fragment() {
@@ -21,6 +25,28 @@ class FragmentProfile : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         binding = FragmentProfileBinding.inflate(layoutInflater, container, false)
+
+        val viewPagerAdapter = activity?.let { AdapterProfileViewPager(it) }
+        binding.fragmentProfileViewpager.adapter = viewPagerAdapter
+        val mediator = TabLayoutMediator(
+            binding.fragmentProfileTablayout,
+            binding.fragmentProfileViewpager,
+            object : TabLayoutMediator.TabConfigurationStrategy {
+
+                override fun onConfigureTab(tab: TabLayout.Tab, position: Int) {
+                    when(position) {
+                        0 -> {
+                            tab.icon = resources.getDrawable(R.drawable.ic_baseline_grid_on_24)
+                        }
+
+                        1 -> {
+                            tab.icon = resources.getDrawable(R.drawable.ic_contact)
+                        }
+                    }
+                }
+            }
+        )
+        mediator.attach()
         return binding.root
     }
 
