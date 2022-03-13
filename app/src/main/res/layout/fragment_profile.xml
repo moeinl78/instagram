@@ -290,6 +290,47 @@
                 tools:listitem="@layout/recycler_profile_item"
                 />
 
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="128dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="16dp"
+                >
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/profileNewStoryFAB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@android:color/transparent"
+                    android:src="@drawable/ic_add_box_outline"
+                    app:fabCustomSize="96dp"
+                    app:elevation="0dp"
+                    app:borderWidth="1dp"
+                    app:borderColor="@color/black"
+                    app:backgroundTint="@color/black"
+                    app:maxImageSize="48dp"
+                    app:rippleColor="@color/gray_text"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintBottom_toTopOf="@+id/profileNewStoryText"
+                    />
+
+                <TextView
+                    android:id="@+id/profileNewStoryText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="New"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    app:layout_constraintTop_toBottomOf="@+id/profileNewStoryFAB"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
         </LinearLayout>
 
     </androidx.core.widget.NestedScrollView>
