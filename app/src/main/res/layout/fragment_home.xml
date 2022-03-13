@@ -53,20 +53,44 @@
 
     </com.google.android.material.appbar.AppBarLayout>
 
-<!--    <androidx.recyclerview.widget.RecyclerView-->
-<!--        android:id="@+id/fragmentHomeStoryRecyclerView"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="64dp"-->
-<!--        android:orientation="horizontal"-->
-<!--        tools:listitem="@layout/recycler_home_story"-->
-<!--        />-->
-
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/mainActivityRecyclerView"
+    <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior"
-        tools:listitem="@layout/recycler_home_item"
-        />
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/fragmentHomeStoryRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="96dp"
+                android:orientation="horizontal"
+                tools:listitem="@layout/recycler_home_story"
+                />
+            
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="16dp"
+                android:alpha="0.5"
+                android:background="@color/gray_text"
+                />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/mainActivityRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                tools:listitem="@layout/recycler_home_item"
+                />
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
