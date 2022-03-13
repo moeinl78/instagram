@@ -6,6 +6,7 @@
     android:layout_width="160dp"
     android:layout_height="232dp"
     android:layout_marginStart="4dp"
+    android:layout_marginTop="12dp"
     app:strokeWidth="0.5dp"
     android:strokeColor="@color/gray_text"
     app:cardElevation="4dp"
