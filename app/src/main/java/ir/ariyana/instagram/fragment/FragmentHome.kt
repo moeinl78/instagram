@@ -6,8 +6,10 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import androidx.fragment.app.Fragment
+import androidx.recyclerview.widget.ConcatAdapter
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import ir.ariyana.instagram.adapter.AdapterAddStory
 import ir.ariyana.instagram.adapter.AdapterHome
 import ir.ariyana.instagram.adapter.AdapterStory
 import ir.ariyana.instagram.data.HomeItem
@@ -46,7 +48,8 @@ class FragmentHome : Fragment() {
             Story("https://upload.wikimedia.org/wikipedia/commons/4/4e/Darren_Hardy.jpg", "Darren Hardy"),
         )
         val storyAdapter = AdapterStory(storyData)
-        binding.fragmentHomeStoryRecyclerView.adapter = storyAdapter
+        val storyAddAdapter = AdapterAddStory()
+        binding.fragmentHomeStoryRecyclerView.adapter = ConcatAdapter(storyAddAdapter, storyAdapter)
         binding.fragmentHomeStoryRecyclerView.layoutManager = LinearLayoutManager(parentFragment?.context, RecyclerView.HORIZONTAL, false)
 
     }

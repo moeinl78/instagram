@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/moein/AndroidStudioProjects/instagram/app/src/main/res/drawable/ic_baseline_add_24.xml" value="0.141" />
         <entry key="..\:/Users/moein/AndroidStudioProjects/instagram/app/src/main/res/drawable/ic_baseline_person_24.xml" value="0.1455" />
         <entry key="..\:/Users/moein/AndroidStudioProjects/instagram/app/src/main/res/layout/activity_main.xml" value="0.264" />
         <entry key="..\:/Users/moein/AndroidStudioProjects/instagram/app/src/main/res/layout/fragment_activity.xml" value="0.2526041666666667" />
@@ -12,6 +13,7 @@
         <entry key="..\:/Users/moein/AndroidStudioProjects/instagram/app/src/main/res/layout/fragment_profile.xml" value="0.2" />
         <entry key="..\:/Users/moein/AndroidStudioProjects/instagram/app/src/main/res/layout/fragment_tab_contact.xml" value="0.264" />
         <entry key="..\:/Users/moein/AndroidStudioProjects/instagram/app/src/main/res/layout/fragment_tab_post.xml" value="0.4" />
+        <entry key="..\:/Users/moein/AndroidStudioProjects/instagram/app/src/main/res/layout/recycler_concat_item.xml" value="0.4" />
         <entry key="..\:/Users/moein/AndroidStudioProjects/instagram/app/src/main/res/layout/recycler_home_item.xml" value="0.264" />
         <entry key="..\:/Users/moein/AndroidStudioProjects/instagram/app/src/main/res/layout/recycler_home_story.xml" value="0.4" />
         <entry key="..\:/Users/moein/AndroidStudioProjects/instagram/app/src/main/res/layout/recycler_profile_item.xml" value="0.264" />
