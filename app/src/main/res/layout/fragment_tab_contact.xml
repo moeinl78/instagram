@@ -13,7 +13,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="@android:color/transparent"
-        android:src="@drawable/ic_contact"
+        android:src="@drawable/ic_baseline_co_present_24"
         app:fabCustomSize="128dp"
         app:elevation="0dp"
         app:borderWidth="1dp"

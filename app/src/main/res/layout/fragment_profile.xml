@@ -292,7 +292,7 @@
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="wrap_content"
-                android:layout_height="128dp"
+                android:layout_height="96dp"
                 android:layout_marginTop="8dp"
                 android:layout_marginStart="16dp"
                 >
@@ -303,11 +303,11 @@
                     android:layout_height="wrap_content"
                     android:backgroundTint="@android:color/transparent"
                     android:src="@drawable/ic_add_box_outline"
-                    app:fabCustomSize="96dp"
+                    app:fabCustomSize="64dp"
                     app:elevation="0dp"
                     app:borderWidth="1dp"
                     app:backgroundTint="@color/black"
-                    app:maxImageSize="48dp"
+                    app:maxImageSize="32dp"
                     app:rippleColor="@color/gray_text"
                     app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -337,16 +337,18 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
-                app:tabIndicatorHeight="3dp"
-                app:tabIndicatorColor="@color/blue_text"
+                app:tabIndicatorHeight="2dp"
+                app:tabIndicatorColor="@color/black"
                 app:tabIconTint="@color/black"
-                app:tabMode="auto"
+                app:tabMode="fixed"
+                app:tabMaxWidth="0dp"
+                app:tabGravity="fill"
                 />
 
             <androidx.viewpager2.widget.ViewPager2
                 android:id="@+id/fragmentProfileViewpager"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="512dp"
                 />
 
         </LinearLayout>
