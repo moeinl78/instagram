@@ -21,13 +21,15 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:elevation="0dp"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
             >
 
             <androidx.appcompat.widget.Toolbar
                 android:id="@+id/profileToolbarLayout"
                 android:layout_width="match_parent"
-                android:layout_height="56dp"
+                android:layout_height="64dp"
                 app:elevation="0dp"
+                app:layout_collapseMode="pin"
                 >
 
                 <LinearLayout
@@ -78,5 +80,215 @@
         </com.google.android.material.appbar.CollapsingToolbarLayout>
 
     </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="96dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                >
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="96dp"
+                    android:layout_height="96dp"
+                    android:layout_marginStart="16dp"
+                    android:src="@drawable/img_profile"
+                    />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_marginStart="32dp"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:textSize="18sp"
+                        android:textColor="@color/black"
+
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Posts"
+                        android:textSize="16sp"
+                        android:textColor="@color/black"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_marginStart="32dp"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="80"
+                        android:textSize="18sp"
+                        android:textColor="@color/black"
+
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Followers"
+                        android:textSize="16sp"
+                        android:textColor="@color/black"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_marginStart="32dp"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="82"
+                        android:textSize="18sp"
+                        android:textColor="@color/black"
+
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Following"
+                        android:textSize="16sp"
+                        android:textColor="@color/black"
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Moein Latifi"
+                android:textColor="@color/black_text"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Android Developer"
+                android:textColor="@color/black_text"
+                android:textSize="16sp"
+                android:textStyle="normal"
+                android:drawableEnd="@drawable/ic_baseline_android_24"
+                android:drawableTint="@color/black_text"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="4dp"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="8dp"
+                android:weightSum="10"
+                >
+
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight="9"
+                    android:layout_marginStart="16dp"
+                    android:text="Edit Profile"
+                    app:strokeColor="@color/gray_text"
+                    app:strokeWidth="1dp"
+                    app:rippleColor="@color/gray_text"
+                    />
+
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight="1"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginEnd="16dp"
+                    android:paddingStart="4dp"
+                    app:icon="@drawable/ic_baseline_person_add_24"
+                    app:iconGravity="start"
+                    app:iconTint="@color/black_text"
+                    app:strokeColor="@color/gray_text"
+                    app:strokeWidth="1dp"
+                    app:rippleColor="@color/gray_text"
+                    />
+
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/discover"
+                    android:textColor="@color/black_text"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_gravity="start"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/see_all"
+                    android:textSize="16sp"
+                    android:textColor="@color/blue_button"
+                    android:layout_gravity="end"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginTop="8dp"
+                    />
+
+            </FrameLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="12dp"
+                />
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
