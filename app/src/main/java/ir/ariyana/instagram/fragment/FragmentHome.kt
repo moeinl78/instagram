@@ -51,6 +51,5 @@ class FragmentHome : Fragment() {
         val storyAddAdapter = AdapterAddStory()
         binding.fragmentHomeStoryRecyclerView.adapter = ConcatAdapter(storyAddAdapter, storyAdapter)
         binding.fragmentHomeStoryRecyclerView.layoutManager = LinearLayoutManager(parentFragment?.context, RecyclerView.HORIZONTAL, false)
-
     }
 }
